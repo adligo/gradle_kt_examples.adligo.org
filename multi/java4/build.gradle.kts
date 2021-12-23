@@ -1,8 +1,14 @@
 val top = "root build.gradle.kts file"
 println("in the " + top)
 
+fun allPlugins(p: Project) {
+  p.apply(plugin="java")
+  p.apply(plugin="eclipse")
+}
 
 plugins {
+  println("plugins is ")
+  println(this)
     application
     eclipse
     java
@@ -37,7 +43,7 @@ fun sharedBDeps(dhs : DependencyHandlerScope) {
 }
 
 project(":subA") {
-    apply(plugin="java")
+  allPlugins(this)
     dependencies {
         sharedADeps(this)
     }
@@ -47,7 +53,7 @@ project(":subA") {
 }
 
 project(":subA-tests") {
-    apply(plugin="java")
+  allPlugins(this)
     dependencies {
         sharedADeps(this)
         project(":subA")
@@ -58,7 +64,7 @@ project(":subA-tests") {
 }
 
 project(":subB") {
-    apply(plugin="java")
+  allPlugins(this)
     dependencies {
         sharedADeps(this)
         project(":subA")
@@ -69,7 +75,7 @@ project(":subB") {
 }
 
 project(":subB-tests") {
-    apply(plugin="java")
+  allPlugins(this)
     dependencies {
         sharedBDeps(this)
     }
