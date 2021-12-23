@@ -41,6 +41,9 @@ project(":subA") {
     dependencies {
         sharedADeps(this)
     }
+   repositories {
+        allRepos(this)
+    }
 }
 
 project(":subA-tests") {
@@ -48,6 +51,9 @@ project(":subA-tests") {
     dependencies {
         sharedADeps(this)
         project(":subA")
+    }
+    repositories {
+        allRepos(this)
     }
 }
 
@@ -57,6 +63,9 @@ project(":subB") {
         sharedADeps(this)
         project(":subA")
     }
+   repositories {
+        allRepos(this)
+    }
 }
 
 project(":subB-tests") {
@@ -64,12 +73,19 @@ project(":subB-tests") {
     dependencies {
         sharedBDeps(this)
     }
+    repositories {
+        allRepos(this)
+    }
 }
 
-subprojects {
-    apply(plugin="java")
+fun allRepos(r: RepositoryHandler) {
+  r.mavenLocal()
+  r.mavenCentral()
 }
 
+repositories {
+    allRepos(this)
+}
 
 /**
  * Note this only executes when hw is explicitly called by gradle ie
