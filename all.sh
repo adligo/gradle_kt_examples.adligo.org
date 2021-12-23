@@ -25,3 +25,4 @@ exec "basic/printOutline" "gradle hw > /dev/null 2>&1"
 exec "basic/javaSingle" "gradle run > /dev/null 2>&1"
 
 exec "multi/printOutline" "gradle hw > /dev/null 2>&1"
+exec "multi/java4" "gradle dependencies > /dev/null 2>&1"
