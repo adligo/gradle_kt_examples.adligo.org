@@ -1,4 +1,5 @@
 /bin/
 /.classpath
 /.idea
+/.gradle
 /gradle_kt_examples.adligo.org.iml
