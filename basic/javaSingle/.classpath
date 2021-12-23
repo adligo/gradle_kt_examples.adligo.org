@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/"/>
+	<classpathentry sourcepath="/Users/scott/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.9/e62ec78303270aefa40721154dc591b9c86072b8/logback-classic-1.2.9-sources.jar" kind="lib" path="/Users/scott/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.9/7d495522b08a9a66084bf417e70eedf95ef706bc/logback-classic-1.2.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/scott/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.0-alpha5/f81126e205abd8c72edfc3834338fdc741e3e238/slf4j-api-2.0.0-alpha5-sources.jar" kind="lib" path="/Users/scott/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.0-alpha5/241721b0e0ef3cd6cf584b8f0e24d24ea80799ea/slf4j-api-2.0.0-alpha5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/scott/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.9/92412f3c48649ab2dbe036dd9a57af0a741cb27e/logback-core-1.2.9-sources.jar" kind="lib" path="/Users/scott/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.9/cdaca0cf922c5791a8efa0063ec714ca974affe3/logback-core-1.2.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+</classpath>

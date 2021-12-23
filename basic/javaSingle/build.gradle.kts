@@ -2,31 +2,31 @@ val top = "root build.gradle.kts file"
 println("in the " + top)
 
 plugins {
-    val pBlock = " plugin block"
+    val pBlock =  " plugin block"
     println("starting " + pBlock)
     println(this)
+    application
+    eclipse
+    java
     println("end " + pBlock + "\n\n")
 }
 
 buildscript {
-    val pBlock = " buildScript block"
+    val pBlock =  " buildScript block"
     println("starting " + pBlock)
     println(this)
     println("end " + pBlock + "\n\n")
 }
 
 repositories {
-    val pBlock = " repositories block"
-    println("starting " + pBlock)
-    println(this)
-    println("end " + pBlock + "\n\n")
+    mavenLocal()
+    mavenCentral()
 }
 
+
 dependencies {
-    val pBlock = " dependencies block"
-    println("starting " + pBlock)
-    println(this)
-    println("end " + pBlock + "\n\n")
+  implementation("org.slf4j:slf4j-api:2.0.0-alpha5")
+  implementation("ch.qos.logback:logback-classic:1.2.9")
 }
 
 /**
@@ -41,5 +41,10 @@ tasks.register("hw") {
     println(this)
     println("end " + pBlock + "\n\n")
 }
+
+application {
+    mainClass.set("org.adligo.javaSingle.App")
+}
+
 
 println("exit " + top + "\n\n")

@@ -21,4 +21,5 @@ function exec() {
 
 exec "basic/first" "gradle build > /dev/null 2>&1"
 exec "basic/printOutline" "gradle hw > /dev/null 2>&1"
-exec "basic/printMultiProjectOutline" "gradle hw > /dev/null 2>&1"
+
+exec "multi/printOutline" "gradle hw > /dev/null 2>&1"
