@@ -9,3 +9,6 @@ The basic folder contains the most basic test project, which you should be able 
 The all.sh script runs all of the sub Gradle builds (and is mostly used as a sanity check / test to make sure that they all work :)
 
 Eacn 2nd level folder is the root of a Gradle Build (unlike the convention which is to have a Gradle Build at the root of a Git Project).  This allows me to keep a large number of Gradle Kotlin Examples together.
+
+This is another similar project if your looking for Gradle Kotlin code ;
+https://github.com/gradle/kotlin-dsl-samples/tree/master/samples
